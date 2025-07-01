@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Winarden Repairs - Small Engine Repair in Huntsville, Ontario">
+  <title>Winarden Repairs</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f7f4; color: #333; }
+    header { text-align: center; padding: 2rem 1rem; background: #2b2b2b; color: #fff; }
+    header img { max-width: 180px; margin-bottom: 1rem; }
+    section { padding: 2rem 1rem; max-width: 960px; margin: auto; }
+    h2 { border-bottom: 2px solid #ccc; padding-bottom: 0.5rem; }
+    .services, .contact, .gallery { margin-top: 2rem; }
+    footer { text-align: center; font-size: 0.9rem; background: #2b2b2b; color: #fff; padding: 1rem; margin-top: 3rem; }
+    .cta { display: flex; gap: 1rem; justify-content: center; margin: 2rem 0; flex-wrap: wrap; }
+    .cta a { background: #3b7f3b; padding: 0.75rem 1.25rem; color: #fff; text-decoration: none; border-radius: 5px; }
+    form input, form textarea { width: 100%; padding: 0.5rem; margin-top: 0.5rem; margin-bottom: 1rem; }
+    form button { background: #2b2b2b; color: white; padding: 0.5rem 1.25rem; border: none; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Winarden Repairs Logo" />
+    <h1>Winarden Repairs</h1>
+    <p>Small Engine Repair - Huntsville, Ontario</p>
+    <div class="cta">
+      <a href="tel:7053808878">Call Now</a>
+      <a href="mailto:info@winardenrepairs.ca">Email Us</a>
+    </div>
+  </header>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Lawnmower repairs & tune-ups</li>
+      <li>Snowblower service</li>
+      <li>Chainsaw & small engine diagnostics</li>
+      <li>Mobile on-site repair (by appointment)</li>
+      <li>Parts ordering & installation</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <label>Your Name</label>
+      <input type="text" name="name" required />
+      <label>Email</label>
+      <input type="email" name="email" required />
+      <label>Phone</label>
+      <input type="tel" name="phone" />
+      <label>Message</label>
+      <textarea name="message" rows="5" required></textarea>
+      <label><input type="checkbox" name="status_request" /> I'd like updates on my repair status</label><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Winarden Repairs – 1120 North Mary Lake Road, Huntsville, ON
+  </footer>
+</body>
+</html>
