@@ -1,95 +1,65 @@
-
-<header style="text-align: center; padding: 24px;">
-  <img src="logo.png" alt="Winarden Repairs Logo" style="height: 120px; max-width: 100%; margin-bottom: 12px;">
-  <h1 style="margin: 0; font-size: 2.5em;">Winarden Repairs</h1>
-  <p style="margin: 4px 0 0; font-size: 1.1em; color: #555;">Small Engine Repair</p>
-</header>
-<section id="services" style="padding: 40px; background-color: #f5f5f5;">
-  <h2 style="text-align: center;">Our Services</h2>
-  <ul style="max-width: 600px; margin: auto; font-size: 1.1em;">
-    <li>Small engine repair (lawnmowers, snowblowers, chainsaws)</li>
-    <li>Pickup & delivery available</li>
-    <li>Fast, honest, local service</li>
-  </ul>
-</section>
-
-<section id="request" style="padding: 40px;">
-  <h2 style="text-align: center;">Request a Repair</h2>
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="max-width: 500px; margin: auto;">
-    <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px; margin: 8px 0;">
-    <input type="email" name="email" placeholder="Email" required style="width: 100%; padding: 12px; margin: 8px 0;">
-    <textarea name="message" placeholder="What needs repair?" required style="width: 100%; padding: 12px; margin: 8px 0; height: 120px;"></textarea>
-    <button type="submit" style="padding: 12px 24px; background-color: #222; color: white; border: none; cursor: pointer;">Submit</button>
-  </form>
-</section>
-
-<section id="contact" style="padding: 40px; background-color: #f5f5f5;">
-  <h2 style="text-align: center;">Contact</h2>
-  <p style="text-align: center;">📞 555-123-4567<br>📧 winardenrepairs@gmail.com</p>
-</section>
-<meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Winarden Repairs - Small Engine Repair in Huntsville, Ontario">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Winarden Repairs</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f7f4; color: #333; }
-    header { text-align: center; padding: 2rem 1rem; background: #2b2b2b; color: #fff; }
-    header img { max-width: 180px; margin-bottom: 1rem; }
-    section { padding: 2rem 1rem; max-width: 960px; margin: auto; }
-    h2 { border-bottom: 2px solid #ccc; padding-bottom: 0.5rem; }
-    .services, .contact, .gallery { margin-top: 2rem; }
-    footer { text-align: center; font-size: 0.9rem; background: #2b2b2b; color: #fff; padding: 1rem; margin-top: 3rem; }
-    .cta { display: flex; gap: 1rem; justify-content: center; margin: 2rem 0; flex-wrap: wrap; }
-    .cta a { background: #3b7f3b; padding: 0.75rem 1.25rem; color: #fff; text-decoration: none; border-radius: 5px; }
-    form input, form textarea { width: 100%; padding: 0.5rem; margin-top: 0.5rem; margin-bottom: 1rem; }
-    form button { background: #2b2b2b; color: white; padding: 0.5rem 1.25rem; border: none; border-radius: 4px; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-<nav style="background-color: #222; padding: 12px 0; text-align: center;">
-  <a href="#services" style="color: white; margin: 0 20px; text-decoration: none; font-weight: bold;">Services</a>
-  <a href="#request" style="color: white; margin: 0 20px; text-decoration: none; font-weight: bold;">Request Work</a>
-  <a href="#contact" style="color: white; margin: 0 20px; text-decoration: none; font-weight: bold;">Contact</a>
-</nav>
-  <header>
-    <img src="logo.png" alt="Winarden Repairs Logo" />
-    <h1>Winarden Repairs</h1>
-    <p>Small Engine Repair - Huntsville, Ontario</p>
-    <div class="cta">
-      <a href="tel:7053808878">Call Now</a>
-      <a href="mailto:info@winardenrepairs.ca">Email Us</a>
-    </div>
+
+  <nav style="background-color: #222; padding: 12px 0; text-align: center;">
+    <a href="#services" style="margin: 0 20px; font-weight: bold;">Services</a>
+    <a href="#request" style="margin: 0 20px; font-weight: bold;">Request Work</a>
+    <a href="#contact" style="margin: 0 20px; font-weight: bold;">Contact</a>
+  </nav>
+
+  <header style="text-align: center; padding: 24px;">
+    <img src="logo.png" alt="Winarden Repairs Logo" style="height: 120px; max-width: 100%; margin-bottom: 12px;">
+    <h1 style="margin: 0; font-size: 2.5em;">Winarden Repairs</h1>
+    <p style="margin: 4px 0 0; font-size: 1.1em; color: #555;">Small Engine Repair</p>
   </header>
 
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Lawnmower repairs & tune-ups</li>
-      <li>Snowblower service</li>
-      <li>Chainsaw & small engine diagnostics</li>
-      <li>Mobile on-site repair (by appointment)</li>
-      <li>Parts ordering & installation</li>
+  <section id="services" style="padding: 40px; background-color: #f5f5f5;">
+    <h2 style="text-align: center;">Our Services</h2>
+    <ul style="max-width: 600px; margin: auto; font-size: 1.1em;">
+      <li>Small engine repair (lawnmowers, snowblowers, chainsaws)</li>
+      <li>Pickup & delivery available</li>
+      <li>Fast, honest, local service</li>
     </ul>
   </section>
 
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/yourformid" method="POST">
-      <label>Your Name</label>
-      <input type="text" name="name" required />
-      <label>Email</label>
-      <input type="email" name="email" required />
-      <label>Phone</label>
-      <input type="tel" name="phone" />
-      <label>Message</label>
-      <textarea name="message" rows="5" required></textarea>
-      <label><input type="checkbox" name="status_request" /> I'd like updates on my repair status</label><br>
-      <button type="submit">Send Message</button>
+  <section id="request" style="padding: 40px;">
+    <h2 style="text-align: center;">Request a Repair</h2>
+    <form action="https://formspree.io/f/mwkgrvzy" method="POST" style="max-width: 500px; margin: auto;">
+      <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px; margin: 8px 0;">
+      <input type="email" name="email" placeholder="Email" required style="width: 100%; padding: 12px; margin: 8px 0;">
+      <textarea name="message" placeholder="What needs repair?" required style="width: 100%; padding: 12px; margin: 8px 0; height: 120px;"></textarea>
+      <button type="submit" style="padding: 12px 24px; background-color: #222; color: white; border: none; cursor: pointer;">Submit</button>
     </form>
   </section>
 
-  <footer>
-    &copy; 2025 Winarden Repairs – 1120 North Mary Lake Road, Huntsville, ON
+  <section id="contact" style="padding: 40px; background-color: #f5f5f5;">
+    <h2 style="text-align: center;">Contact</h2>
+    <p style="text-align: center;">📞 555-123-4567<br>📧 winardenrepairs@gmail.com</p>
+  </section>
+
+  <footer style="background-color: #222; color: white; text-align: center; padding: 20px; margin-top: 40px;">
+    &copy; 2025 Winarden Repairs. All rights reserved.
   </footer>
+
 </body>
 </html>
