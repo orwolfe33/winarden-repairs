@@ -4,7 +4,30 @@
   <h1 style="margin: 0; font-size: 2.5em;">Winarden Repairs</h1>
   <p style="margin: 4px 0 0; font-size: 1.1em; color: #555;">Small Engine Repair</p>
 </header>
-  <meta charset="UTF-8" />
+<section id="services" style="padding: 40px; background-color: #f5f5f5;">
+  <h2 style="text-align: center;">Our Services</h2>
+  <ul style="max-width: 600px; margin: auto; font-size: 1.1em;">
+    <li>Small engine repair (lawnmowers, snowblowers, chainsaws)</li>
+    <li>Pickup & delivery available</li>
+    <li>Fast, honest, local service</li>
+  </ul>
+</section>
+
+<section id="request" style="padding: 40px;">
+  <h2 style="text-align: center;">Request a Repair</h2>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="max-width: 500px; margin: auto;">
+    <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px; margin: 8px 0;">
+    <input type="email" name="email" placeholder="Email" required style="width: 100%; padding: 12px; margin: 8px 0;">
+    <textarea name="message" placeholder="What needs repair?" required style="width: 100%; padding: 12px; margin: 8px 0; height: 120px;"></textarea>
+    <button type="submit" style="padding: 12px 24px; background-color: #222; color: white; border: none; cursor: pointer;">Submit</button>
+  </form>
+</section>
+
+<section id="contact" style="padding: 40px; background-color: #f5f5f5;">
+  <h2 style="text-align: center;">Contact</h2>
+  <p style="text-align: center;">📞 555-123-4567<br>📧 winardenrepairs@gmail.com</p>
+</section>
+<meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Winarden Repairs - Small Engine Repair in Huntsville, Ontario">
   <title>Winarden Repairs</title>
@@ -23,6 +46,11 @@
   </style>
 </head>
 <body>
+<nav style="background-color: #222; padding: 12px 0; text-align: center;">
+  <a href="#services" style="color: white; margin: 0 20px; text-decoration: none; font-weight: bold;">Services</a>
+  <a href="#request" style="color: white; margin: 0 20px; text-decoration: none; font-weight: bold;">Request Work</a>
+  <a href="#contact" style="color: white; margin: 0 20px; text-decoration: none; font-weight: bold;">Contact</a>
+</nav>
   <header>
     <img src="logo.png" alt="Winarden Repairs Logo" />
     <h1>Winarden Repairs</h1>
