@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winarden Repairs</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav style="background-color: #222; padding: 12px 0; text-align: center;">
+    <a href="#services" style="margin: 0 20px; font-weight: bold;">Services</a>
+    <a href="#testimonials" style="margin: 0 20px; font-weight: bold;">Testimonials</a>
+    <a href="#gallery" style="margin: 0 20px; font-weight: bold;">Gallery</a>
+    <a href="#request" style="margin: 0 20px; font-weight: bold;">Request Work</a>
+    <a href="#contact" style="margin: 0 20px; font-weight: bold;">Contact</a>
+  </nav>
+
+  <header style="text-align: center; padding: 24px;">
+    <img src="logo.png" alt="Winarden Repairs Logo" style="height: 120px; max-width: 100%; margin-bottom: 12px;">
+    <h1 style="margin: 0; font-size: 2.5em;">Winarden Repairs</h1>
+    <p style="margin: 4px 0 0; font-size: 1.1em; color: #555;">Small Engine Repair</p>
+  </header>
+
+  <section id="services" style="padding: 40px; background-color: #f5f5f5;">
+    <h2 style="text-align: center;">Our Services</h2>
+    <ul style="max-width: 600px; margin: auto; font-size: 1.1em;">
+      <li>Snowblowers</li>
+      <li>Chainsaws</li>
+      <li>Lawn mowers</li>
+      <li>Grass trimmers</li>
+      <li>Garden tillers</li>
+      <li>Leaf blowers</li>
+      <li>Hedge trimmers</li>
+      <li>Pressure washers</li>
+      <li>Generators</li>
+      <li>Portable water pumps</li>
+      <li>Edgers</li>
+      <li>Rototillers</li>
+      <li>Small engine repair (lawnmowers, snowblowers, chainsaws)</li>
+      <li>Pickup & delivery available</li>
+      <li>Fast, honest, local service</li>
+    </ul>
+  </section>
+
+  <section id="testimonials" style="padding: 40px;">
+    <h2 style="text-align: center;">What Our Customers Say</h2>
+    <blockquote style="max-width: 600px; margin: 20px auto; font-style: italic;">"Fast service and honest pricing. My snowblower runs like new!" – Sarah L.</blockquote>
+    <blockquote style="max-width: 600px; margin: 20px auto; font-style: italic;">"Highly recommend. Picked up and dropped off my mower – super convenient." – Mike D.</blockquote>
+    <blockquote style="max-width: 600px; margin: 20px auto; font-style: italic;">"Friendly and knowledgeable. Will use again next season." – Joanne K.</blockquote>
+  </section>
+
+  <section id="gallery" style="padding: 40px; background-color: #f5f5f5; text-align: center;">
+    <h2>Gallery</h2>
+    <p style="margin-bottom: 20px; color: #666;">Before & after repairs coming soon!</p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+      <div style="width: 200px; height: 150px; background-color: #ddd; display: flex; align-items: center; justify-content: center;">Image 1</div>
+      <div style="width: 200px; height: 150px; background-color: #ddd; display: flex; align-items: center; justify-content: center;">Image 2</div>
+      <div style="width: 200px; height: 150px; background-color: #ddd; display: flex; align-items: center; justify-content: center;">Image 3</div>
+    </div>
+  </section>
+
+  <section id="request" style="padding: 40px;">
+    <h2 style="text-align: center;">Request a Repair</h2>
+    <form action="https://formspree.io/f/movwzjql" method="POST" id="contact-form" style="max-width: 500px; margin: auto;">
+      <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px; margin: 8px 0;">
+      <input type="email" name="email" placeholder="Email" required style="width: 100%; padding: 12px; margin: 8px 0;">
+      <textarea name="message" placeholder="What needs repair?" required style="width: 100%; padding: 12px; margin: 8px 0; height: 120px;"></textarea>
+      <input type="text" name="_gotcha" style="display:none">
+      <button type="submit" style="padding: 12px 24px; background-color: #222; color: white; border: none; cursor: pointer;">Submit</button>
+      <p id="form-status" style="text-align: center; margin-top: 12px;"></p>
+    </form>
+    <script>
+      const form = document.getElementById('contact-form');
+      const status = document.getElementById('form-status');
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          status.innerHTML = "✅ Thanks for your request — we’ll get back to you shortly!";
+          form.reset();
+        } else {
+          status.innerHTML = "❌ Sorry, there was a problem. Please try again or contact us directly.";
+        }
+      });
+    </script>
+  </section>
+
+  <section id="contact" style="padding: 40px; background-color: #f5f5f5;">
+    <h2 style="text-align: center;">Contact</h2>
+    <p style="text-align: center;">📞 705-380-8878<br>📧 winardenrepairs@gmail.com</p>
+  </section>
+
+  <footer style="background-color: #222; color: white; text-align: center; padding: 20px; margin-top: 40px;">
+    &copy; 2025 Winarden Repairs. All rights reserved.
+  </footer>
+
+</body>
+</html>
